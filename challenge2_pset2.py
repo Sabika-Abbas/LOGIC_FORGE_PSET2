@@ -35,8 +35,8 @@ def can_balance_scales(arr):
             i-=1
         elif j>=arr[i-1] and dp[i-1][j-arr[i-1]]:
             bagA.append(arr[i-1])
-            j -= arr[i-1]
-            i -= 1
+            j-=arr[i-1]
+            i-=1
     
     while i>0:
         bagB.append(arr[i-1])
